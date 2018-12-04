@@ -16,6 +16,7 @@ a{
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 #header ul{
 	float: right;
@@ -89,18 +90,19 @@ a{
 	height: 48px;
 	border: 1px solid #eaeaea;
 	border-left: 0;
-	background: url(../img/search_btn.png) no-repeat center;
+	background: url(../imgs/search_btn.png) no-repeat center;
 }
 
 /*轮播*/
 .banner{
 	width: 100%;
-	height: 393px;
+	height: 561px;	
 }
 .banner .wrap{
 	width: 1226px;
 	margin: 0 auto;
 	position: relative;
+	margin-bottom: 27px;
 }
 .banner .wrap .banner-box{
 	height: 393px;
@@ -118,7 +120,7 @@ a{
 	bottom: 0;
 	margin: auto;
 	left: 245px;
-	background: url(../img/slider-arrow-gray.png) no-repeat;
+	background: url(../imgs/slider-arrow-gray.png) no-repeat;
 	background-position: -202px 0;
 }
 .banner .wrap .banner-box .next{
@@ -129,8 +131,24 @@ a{
 	bottom: 0;
 	margin: auto;
 	right: 38px;
-	background: url(../img/slider-arrow-gray.png) no-repeat;
+	background: url(../imgs/slider-arrow-gray.png) no-repeat;
 	background-position: 0px 0;
+}
+.banner .wrap .banner-box .point{
+	width: 1226px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	text-align: center;
+}
+.banner .wrap .banner-box .point i{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #fff;
+	display: inline-block;
+	margin-right: 10px;
 }
 
 
@@ -160,4 +178,238 @@ a{
 	position: absolute;
 	top: 0;
 	right: 18px;
+}
+.banner .banner-sub{
+	width: 1226px;
+	height: 141px;
+	margin: 0 auto;
+}
+.banner .banner-sub a img{
+	float: left;
+	margin-right: 4px;
+}
+.banner .banner-sub a:last-child img{
+	margin: 0;
+}
+/*内容区*/
+/*明星产品*/
+.container{
+	width: 100%;
+	height: 561px;
+	box-sizing: border-box;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+.container .start-wrap{
+	width: 1226px;
+	margin: 0 auto;
+}
+.container .start-wrap .top{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.container .start-wrap .top h1{
+	font-size: 34px;
+    line-height: 44px;
+    font-weight: 500;
+	color: #969696;
+
+}
+.container .start-wrap .top img{
+	width: 279px;
+    height: 5px;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+.container .start-wrap .top p{
+	font-size: 15px;
+    line-height: 30px;
+    color: #666;
+}
+.container .start-wrap ul li{
+	position: relative;
+	float: left;
+	margin-right: 4px;
+	background: url(../imgs/star_goods_bg.png) no-repeat center;
+}
+.container .start-wrap ul li:last-child{
+	margin: 0;
+}
+/*商品信息*/
+.container .start-wrap ul li .goods-info{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+    padding-bottom: 10px;
+}
+/*标题*/
+.container .start-wrap ul li .goods-info .goods-title{
+	font-size: 16px;
+	line-height: 16px;
+    font-weight: 500;
+    color: #969696;
+}
+/*简介*/
+.container .start-wrap ul li .goods-info .goods-present{
+	font-size: 14px;
+	line-height: 34px;
+	color: #656565;
+}
+/*价格*/
+.container .start-wrap ul li .goods-info .goods-price{
+	font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fe003f;
+}
+
+/*内容分类展示*/
+.content{
+	width: 100%;
+	background: #f5f5f5;
+}
+.content .content-box{
+	width: 1226px;
+	margin: 0 auto;
+}
+/*彩妆香水*/
+.content .content-box .cosmetics .title{
+	padding-top: 25px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.content .content-box .cosmetics .title h1{
+	font-size: 34px;
+    line-height: 44px;
+    font-weight: 500;
+    color: #969696;
+}
+.content .content-box .cosmetics .title p{
+	font-size: 15px;
+    line-height: 30px;
+    color: #666;
+}
+.content .content-box .cosmetics .title a{
+	position: absolute;
+	right: 0;
+	bottom: 34px;
+}
+.cosmetics .cosmetics-goods{
+	height: 650px;
+}
+.cosmetics .cosmetics-goods .cosmetics-banner{
+	width: 253px;
+	height: 611px;
+	float: left;
+}
+.cosmetics .cosmetics-goods .right{
+	width: 973px;
+	height: 624px;
+	float: right;
+}
+.cosmetics .cosmetics-goods .right ul li{
+	width: 232px;
+	height: 299px;
+	margin-left: 10px;
+	margin-bottom: 13px;
+	float: left;
+	background: #fff;
+	position: relative;
+}
+/*商品信息*/
+.cosmetics .cosmetics-goods .right ul li  .goods-info{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+    padding-bottom: 10px;
+}
+/*标题*/
+.cosmetics .cosmetics-goods .right ul li  .goods-info .goods-title{
+	font-size: 15px;
+	line-height: 15px;
+    font-weight: 500;
+    color: #969696;
+}
+/*简介*/
+.cosmetics .cosmetics-goods .right ul li  .goods-info .goods-present{
+	font-size: 13px;
+	line-height: 27px;
+	color: #656565;
+}
+/*价格*/
+.cosmetics .cosmetics-goods .right ul li  .goods-info .goods-price{
+	font-size: 17px;
+    line-height: 27px;
+    font-weight: bold;
+    color: #fe003f;
+}
+
+/*美容食品*/
+.container .end-wrap{
+	width: 1226px;
+	margin: 0 auto;
+}
+.container .end-wrap .top{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.container .end-wrap .top h1{
+	font-size: 34px;
+    line-height: 44px;
+    font-weight: 500;
+	color: #969696;
+
+}
+.container .end-wrap .top img{
+	width: 279px;
+    height: 5px;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+.container .end-wrap .top p{
+	font-size: 15px;
+    line-height: 30px;
+    color: #666;
+}
+.container .end-wrap ul li{
+	position: relative;
+	float: left;
+	margin-right: 4px;
+	background: url(../imgs/star_goods_bg.png) no-repeat center;
+}
+.container .end-wrap ul li:last-child{
+	margin: 0;
+}
+/*商品信息*/
+.container .end-wrap ul li .goods-info{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+    padding-bottom: 10px;
+}
+/*标题*/
+.container .end-wrap ul li .goods-info .goods-title{
+	font-size: 16px;
+	line-height: 16px;
+    font-weight: 500;
+    color: #969696;
+}
+/*简介*/
+.container .end-wrap ul li .goods-info .goods-present{
+	font-size: 14px;
+	line-height: 34px;
+	color: #656565;
+}
+/*价格*/
+.container .end-wrap ul li .goods-info .goods-price{
+	font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fe003f;
 }
