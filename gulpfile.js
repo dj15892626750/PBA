@@ -1,4 +1,4 @@
-// 引入模块
+﻿// 引入模块
 const
 	gulp = require("gulp"),
 	babel = require("gulp-babel"),
@@ -52,7 +52,7 @@ gulp.task("copy", ["copy-images", "copy-lib", "copy-css"]);
 // 启动 webserver
 gulp.task('server', function() {
 	connect.server({
-		root: "src",
+		root: "dist",
 		port: 8080,
 		livereload: true
 	});
