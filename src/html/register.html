@@ -3,8 +3,32 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>PBA-用户注册</title>
+		<link rel="stylesheet" type="text/css" href="/css/register.css"/>
+		<link rel="shortcut icon" href="/imgs/favicon.ico"/>
 	</head>
 	<body>
-		
+		<div class="register">
+			<div class="logo">
+				<a href="/">
+					<img src="../imgs/reg-logo.png"/>
+				</a>
+				<h1>注册个人账号</h1>
+			</div>
+			<form>
+				<p><input type="text" name="username" id="username" value="" placeholder="请输入手机号"/></p>
+				<p>
+					<input type="text" name="" id="code" placeholder="请输入验证码" />
+					<img src="../imgs/code.png" title="看不清？点击切换"/>
+				</p>
+				<p>
+					<input type="text" name="" id="phone-code" value="" placeholder="请输入手机验证码"/>
+					<a href="javascript:">获取手机验证码</a>
+				</p>
+				<p><input type="password" name="" id="password" placeholder="设置密码"/></p>
+				<p><input type="password" name="" id="pwd-true" placeholder="确认密码"/></p>
+				<p><input type="submit" class="reg-btn" value="立即注册"/></p>
+				<p>点击“立即注册”,即表示您同意并且愿意遵守PBA<a href="javascript:">用户协议</a></p>
+			</form>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,90 @@
+.container{
+    width:1240px;
+    height: 50px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 16px;
+    a{
+        color: #969696;
+    }
+    table{
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        thead tr{
+            height: 50px;
+        }
+        th,td{
+            border: 1px solid #ccc;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .product-info{
+            td img{
+                height: 110px;
+                margin: 8px auto;
+                vertical-align: top;
+            }
+            td p{
+                border: 1px solid #e2e2e2;
+                width: 132px;
+                height: 28px;
+                line-height: 28px;
+                margin: 0 auto;
+                span{
+                    float: left;
+                    text-align: center;
+                    width: 28px;
+                    height: 100%;
+                    cursor: pointer;
+                }
+                .count{
+                    float: left;
+                    border: none;
+                    width: 74px;
+                    text-align: center;
+                    border-left: 1px solid #e2e2e2;
+                    border-right: 1px solid #e2e2e2;
+                    height: 20px;
+                    line-height: 18px;
+                    padding: 4px 0;
+                    overflow: hidden;
+                }
+            }
+            
+        }
+    }
+    .result{
+        height:50px ;
+        line-height: 50px;
+        font-size: 14px;
+        margin-top: 30px;
+        .delete{
+            padding: 0 10px;
+            margin-left: 30px;
+        }
+        p{
+            height: 50px;
+            float: right;
+            margin-right: 25px;
+            .allprice{
+                font-size: 24px;
+                color: orangered;
+            }
+            .accounts{
+                float: right;
+                width: 80px;
+                height: 50px;
+                background: red;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 50px;
+                color: #fff;
+                margin-left: 20px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

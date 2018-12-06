@@ -82,6 +82,13 @@ a{
 .nav ul li a{
 	color:#969696;
 }
+.nav ul li:hover a{
+	color: #E60041;
+}
+.nav ul .active a{
+	color: #E60041;
+}
+
 .search{
 	float: right;
 	width: 268px;
