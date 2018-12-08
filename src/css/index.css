@@ -245,6 +245,10 @@ a{
 	font-size: 14px;
 	line-height: 34px;
 	color: #656565;
+	width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*价格*/
 .container .start-wrap .bottom ul li .goods-info .goods-price{
@@ -335,6 +339,10 @@ a{
 	font-size: 13px;
 	line-height: 27px;
 	color: #656565;
+	width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*价格*/
 .cosmetics .cosmetics-goods .right ul li  .goods-info .goods-price{
@@ -411,6 +419,10 @@ a{
 	font-size: 14px;
 	line-height: 34px;
 	color: #656565;
+	width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*价格*/
 .container .end-wrap ul li .goods-info .goods-price{

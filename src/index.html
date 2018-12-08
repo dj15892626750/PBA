@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>PBA-我的美妆网</title>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css"/>
 		<script src="lib/requirejs/require.min.js" data-main="js/index"></script>
+		
 	</head>
 	<body>
 		<!--顶部-->
@@ -17,6 +19,18 @@
 		<div class="banner">
 			<div class="wrap">
 				<!--轮播图-->
+				<!--<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						<li style="display: block;" class="swiper-slide"><img src="imgs/banner_01.jpg"/></li>
+						<li class="swiper-slide"><img src="imgs/banner_03.jpg"/></li>
+					</ul>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-pagination">
+					</div>
+				</div>-->
+				
+				
 				<div class="banner-box">
 					<ul>
 						<li style="display: block;"><img src="imgs/banner_01.jpg"/></li>
@@ -141,8 +155,8 @@
 					<p>全民疯抢，好评如潮，聪明女人必败！</p>
 				</div>
 				<div class="bottom">
-					<ul>
-						<li>
+					<ul class="star-prod">
+						<!--<li>
 							<a href="javascript:">
 								<img src="imgs/star_01.png"/>
 								<div class="goods-info">
@@ -152,46 +166,7 @@
 								</div>
 							</a>
 						</li>
-						<li>
-							<a href="javascript:">
-								<img src="imgs/star_02.png"/>
-								<div class="goods-info">
-									<p class="goods-title">渐变唇膏</p>
-									<p class="goods-present">咬唇妆不用学，一抹即现</p>
-									<p class="goods-price">49.9元</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:">
-								<img src="imgs/star_03.png"/>
-								<div class="goods-info">
-									<p class="goods-title">矿物散粉</p>
-									<p class="goods-present">控油防脱妆，一整天不晕不花</p>
-									<p class="goods-price">49.9元</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:">
-								<img src="imgs/star_04.png"/>
-								<div class="goods-info">
-									<p class="goods-title">缤纷焕采面膜贴 24片</p>
-									<p class="goods-present">美白又补水，满足肌肤的渴望</p>
-									<p class="goods-price">49.9元</p>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:">
-								<img src="imgs/star_05.png"/>
-								<div class="goods-info">
-									<p class="goods-title">妆前乳</p>
-									<p class="goods-present">隔离伤害，平滑肌肤帮助上妆</p>
-									<p class="goods-price">49.9元</p>
-								</div>
-							</a>
-						</li>
+						-->
 					</ul>
 				</div>
 			</div>
@@ -214,8 +189,8 @@
 							<a href="#"><img src="imgs/birck_03_01.jpg"/></a>
 						</div>
 						<div class="right">
-							<ul>
-								<li>
+							<ul class="cosmetics-prod">
+								<!--<li>
 									<a href="#">
 										<img src="imgs/birck_03_02.png"/>
 										<div class="goods-info">
@@ -225,76 +200,7 @@
 										</div>
 									</a>
 								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_03_03.png"/>
-										<div class="goods-info">
-											<p class="goods-title">CC霜</p>
-											<p class="goods-present">巨薄巨水润，轻松粉饰好气色</p>
-											<p class="goods-price">29.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_03_04.png"/>
-										<div class="goods-info">
-											<p class="goods-title">柔软粉饼</p>
-											<p class="goods-present">创新年糕质地，打造弹润光感肌</p>
-											<p class="goods-price">31.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_03_05.png"/>
-										<div class="goods-info">
-											<p class="goods-title">双色眉粉</p>
-											<p class="goods-present">自然双拼色，描画立体眉型</p>
-											<p class="goods-price">39.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_03_06.png"/>
-										<div class="goods-info">
-											<p class="goods-title">双头睫毛膏</p>
-											<p class="goods-present">纤长浓密，双倍放大电眼</p>
-											<p class="goods-price">39.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_03_07.png"/>
-										<div class="goods-info">
-											<p class="goods-title">靓眼防水眼线笔</p>
-											<p class="goods-present">擦干眼泪，你还是你</p>
-											<p class="goods-price">29.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_03_08.png"/>
-										<div class="goods-info">
-											<p class="goods-title">柔软眼影</p>
-											<p class="goods-present">百搭大地色，点亮魅力双眸</p>
-											<p class="goods-price">31.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_03_09.png"/>
-										<div class="goods-info">
-											<p class="goods-title">花漾小姐香水1号</p>
-											<p class="goods-present">花果香调，邻家女孩般清新</p>
-											<p class="goods-price">79.9元</p>
-										</div>
-									</a>
-								</li>
+								-->
 							</ul>
 						</div>
 					</div>
@@ -315,87 +221,8 @@
 							<a href="#"><img src="imgs/birck_02_01.jpg"/></a>
 						</div>
 						<div class="right">
-							<ul>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_02_02.png"/>
-										<div class="goods-info">
-											<p class="goods-title">泡沫洁面乳</p>
-											<p class="goods-present">温和去污，干净不紧绷</p>
-											<p class="goods-price">49.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_02_03.png"/>
-										<div class="goods-info">
-											<p class="goods-title">竹炭手工皂</p>
-											<p class="goods-present">和草莓鼻油光脸说再见！</p>
-											<p class="goods-price">29.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_02_04.png"/>
-										<div class="goods-info">
-											<p class="goods-title">保湿精华水</p>
-											<p class="goods-present">赶走干燥，不做女“旱”子</p>
-											<p class="goods-price">39.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_02_05.png"/>
-										<div class="goods-info">
-											<p class="goods-title">保湿乳液</p>
-											<p class="goods-present">长效保湿，清爽不粘腻</p>
-											<p class="goods-price">39.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_02_06.png"/>
-										<div class="goods-info">
-											<p class="goods-title">芦荟胶</p>
-											<p class="goods-present">热卖单品，是女人都有一瓶</p>
-											<p class="goods-price">19.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_02_07.png"/>
-										<div class="goods-info">
-											<p class="goods-title">眼部精华霜</p>
-											<p class="goods-present">黑眼圈、细纹通通离远点</p>
-											<p class="goods-price">29.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_02_08.png"/>
-										<div class="goods-info">
-											<p class="goods-title">去角质磨砂膏</p>
-											<p class="goods-present">清除老化角质，重拾嫩滑肌</p>
-											<p class="goods-price">29.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_02_09.png"/>
-										<div class="goods-info">
-											<p class="goods-title">胶原蛋白精华液</p>
-											<p class="goods-present">紧致润弹，让肌肤更年轻</p>
-											<p class="goods-price">59.9元</p>
-										</div>
-									</a>
-								</li>
+							<ul class="skin_prod">
+								
 							</ul>
 						</div>
 					</div>
@@ -416,87 +243,8 @@
 							<a href="#"><img src="imgs/birck_01_01.jpg"/></a>
 						</div>
 						<div class="right">
-							<ul>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_01_02.png"/>
-										<div class="goods-info">
-											<p class="goods-title">玻尿酸面膜贴 10片</p>
-											<p class="goods-present">补水皇后，干皮离了它没法活</p>
-											<p class="goods-price">39元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_01_03.png"/>
-										<div class="goods-info">
-											<p class="goods-title">水润丝滑面膜贴 10片</p>
-											<p class="goods-present">销量领先，薄到透明润到极致！</p>
-											<p class="goods-price">39元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_01_04.png"/>
-										<div class="goods-info">
-											<p class="goods-title">红景天面膜贴 10片</p>
-											<p class="goods-present">上班族首选，抗氧化防辐射</p>
-											<p class="goods-price">39元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_01_05.png"/>
-										<div class="goods-info">
-											<p class="goods-title">薰衣草面膜贴 10片</p>
-											<p class="goods-present">活力亮肤，坚决不当黄脸婆</p>
-											<p class="goods-price">39元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_01_06.png"/>
-										<div class="goods-info">
-											<p class="goods-title">水凝保湿面膜礼盒 20片</p>
-											<p class="goods-present">黄金搭配，周期护理更有效</p>
-											<p class="goods-price">84元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_01_07.png"/>
-										<div class="goods-info">
-											<p class="goods-title">玻尿酸补水面膜礼盒 20片</p>
-											<p class="goods-present">高性价比，一盒够用两个月</p>
-											<p class="goods-price">84元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_01_08.png"/>
-										<div class="goods-info">
-											<p class="goods-title">水嫩保湿睡眠面膜</p>
-											<p class="goods-present">一夜惊喜，懒美人御用面膜</p>
-											<p class="goods-price">109元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_01_09.png"/>
-										<div class="goods-info">
-											<p class="goods-title">滋养柔嫩手膜 25ml/对</p>
-											<p class="goods-present">褪去粗糙，让双手变得嫩滑</p>
-											<p class="goods-price">59.9元</p>
-										</div>
-									</a>
-								</li>
+							<ul class="models_prod">
+								
 							</ul>
 						</div>
 					</div>
@@ -517,92 +265,12 @@
 							<a href="#"><img src="imgs/birck_04_01.jpg"/></a>
 						</div>
 						<div class="right">
-							<ul>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_04_02.png"/>
-										<div class="goods-info">
-											<p class="goods-title">清颜化妆棉</p>
-											<p class="goods-present">双面夹层设计，绝不掉屑</p>
-											<p class="goods-price">13.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_04_03.png"/>
-										<div class="goods-info">
-											<p class="goods-title">双眼皮贴</p>
-											<p class="goods-present">隐形不反光，小眼瞬间变大眼！</p>
-											<p class="goods-price">5.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_04_04.png"/>
-										<div class="goods-info">
-											<p class="goods-title">洁面刷</p>
-											<p class="goods-present">毛孔清洁器，带走残留污垢</p>
-											<p class="goods-price">25.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_04_05.png"/>
-										<div class="goods-info">
-											<p class="goods-title">亲肤葫芦棉礼盒 4色装</p>
-											<p class="goods-present">干湿两用，打造无死角妆容</p>
-											<p class="goods-price">39.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_04_06.png"/>
-										<div class="goods-info">
-											<p class="goods-title">双头棉棒</p>
-											<p class="goods-present">一头尖一头螺旋，洁净更到位</p>
-											<p class="goods-price">11.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_04_07.png"/>
-										<div class="goods-info">
-											<p class="goods-title">香氛无硅洗发乳</p>
-											<p class="goods-present">改善干枯毛躁，减少头屑</p>
-											<p class="goods-price">29.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_04_08.png"/>
-										<div class="goods-info">
-											<p class="goods-title">香氛发膜</p>
-											<p class="goods-present">深层滋养，修复受损发质</p>
-											<p class="goods-price">29.9元</p>
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img src="imgs/birck_04_09.png"/>
-										<div class="goods-info">
-											<p class="goods-title">香氛沐浴乳</p>
-											<p class="goods-present">温和洁净，让肌肤爽滑舒适</p>
-											<p class="goods-price">29.9元</p>
-										</div>
-									</a>
-								</li>
+							<ul class="tools_prod">
+								
 							</ul>
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 		
@@ -614,64 +282,112 @@
 					<img src="imgs/birck_line_01.png"/>
 					<p>懒美人的养身秘笈，不运动也有好身材！</p>
 				</div>
-				<ul>
-					<li>
-						<a href="javascript:">
-							<img src="imgs/index_food_01.png"/>
-							<div class="goods-info">
-								<p class="goods-title">纤纤梅</p>
-								<p class="goods-present">改善便秘 排毒瘦身</p>
-								<p class="goods-price">19.9元</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:">
-							<img src="imgs/index_food_02.png"/>
-							<div class="goods-info">
-								<p class="goods-title">胶原蛋白果味饮料</p>
-								<p class="goods-present">抗皱防衰 冻龄圣品</p>
-								<p class="goods-price">399.0元</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:">
-							<img src="imgs/index_food_03.png"/>
-							<div class="goods-info">
-								<p class="goods-title">果汁软糖</p>
-								<p class="goods-present">好吃不怕胖的营养零食</p>
-								<p class="goods-price">11.9元</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:">
-							<img src="imgs/index_food_04.png"/>
-							<div class="goods-info">
-								<p class="goods-title">黑糖姜茶</p>
-								<p class="goods-present">活血暖宫 女性生理期必备</p>
-								<p class="goods-price">29.9元</p>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:">
-							<img src="imgs/index_food_05.png"/>
-							<div class="goods-info">
-								<p class="goods-title">植物酵素饮品</p>
-								<p class="goods-present">健康排毒 轻松“享”瘦</p>
-								<p class="goods-price">399.0元</p>
-							</div>
-						</a>
-					</li>
+				<ul class="food_prod">
+						
 				</ul>
 			</div>
 		</div>
 		
 		<!--底部-->
-		<div class="footer">
-			
-		</div>
+		<div class="footer"></div>		
+		
+		
+		<!--明星产品-->
+		<script type="text/html" id="star-template">
+			{{each star prod}}
+			<li>
+				<a href="javascript:">
+					<img src="{{prod.img}}"/>
+					<div class="goods-info">
+						<p class="goods-title">{{prod.title}}</p>
+						<p class="goods-present">{{prod.intro}}</p>
+						<p class="goods-price">{{prod.price}}元</p>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</script>
+		
+		<!--彩妆香水-->
+		<script type="text/html" id="cosmetics-template">
+			{{each cosmetics prod}}
+			<li>
+				<a href="javascript:">
+					<img src="{{prod.img}}"/>
+					<div class="goods-info">
+						<p class="goods-title">{{prod.title}}</p>
+						<p class="goods-present">{{prod.intro}}</p>
+						<p class="goods-price">{{prod.price}}元</p>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</script>
+		
+		<!--养肤护肤-->
+		<script type="text/html" id="skin-template">
+			{{each skin prod}}
+			<li>
+				<a href="javascript:">
+					<img src="{{prod.img}}"/>
+					<div class="goods-info">
+						<p class="goods-title">{{prod.title}}</p>
+						<p class="goods-present">{{prod.intro}}</p>
+						<p class="goods-price">{{prod.price}}元</p>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</script>
+		
+		<!--当红名模-->
+		<script type="text/html" id="models-template">
+			{{each models prod}}
+			<li>
+				<a href="javascript:">
+					<img src="{{prod.img}}"/>
+					<div class="goods-info">
+						<p class="goods-title">{{prod.title}}</p>
+						<p class="goods-present">{{prod.intro}}</p>
+						<p class="goods-price">{{prod.price}}元</p>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</script>
+		
+		<!--工具洗护-->
+		<script type="text/html" id="tools-template">
+			{{each tools prod}}
+			<li>
+				<a href="javascript:">
+					<img src="{{prod.img}}"/>
+					<div class="goods-info">
+						<p class="goods-title">{{prod.title}}</p>
+						<p class="goods-present">{{prod.intro}}</p>
+						<p class="goods-price">{{prod.price}}元</p>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</script>
+		
+		<!--美容食品-->
+		<script type="text/html" id="food-template">
+			{{each food prod}}
+			<li>
+				<a href="javascript:">
+					<img src="{{prod.img}}"/>
+					<div class="goods-info">
+						<p class="goods-title">{{prod.title}}</p>
+						<p class="goods-present">{{prod.intro}}</p>
+						<p class="goods-price">{{prod.price}}元</p>
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</script>
+
+		
 	</body>
 </html>

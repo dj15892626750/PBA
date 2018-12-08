@@ -20,17 +20,20 @@
             .small-pic{
                 width: 480px;
                 margin: 0 auto;
-                li{
-                    float: left;
-                    width: 53px;
-                    height: 53px;
-                    border: 1px solid #E2E2E2;
-                    text-align: center;
-                    margin-right: 10px;
-                    img{
-                        width: 50px;
-                        
-                    }
+                a{
+                float: left;
+                width: 52px;
+                height: 52px;
+                border: 1px solid #E2E2E2;
+                text-align: center;
+                margin-right: 10px;
+                }
+                img{
+                    width: 50px;
+                    margin: 1px 0; 
+                }
+                .action{
+                    border: 1px solid #F22D00;
                 }
             }
         }
