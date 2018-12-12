@@ -33,6 +33,13 @@ gulp.task("html", ()=>{
 			.pipe(gulp.dest("dist/"))
 			.pipe(connect.reload());
 });
+// 编译*.scss文件
+gulp.task("css", ()=>{
+	gulp.src("src/sass/**/*.scss")
+			.pipe(sass({outputStyle: "expanded"}))
+			.pipe(gulp.dest("src/css"))
+			.pipe(connect.reload());
+});
 
 // 将 src 下的 images、lib、css 复制到 dist 目录下
 gulp.task("copy-images", ()=>{
@@ -43,11 +50,11 @@ gulp.task("copy-lib", ()=>{
 	gulp.src("src/lib/**/*.*")
 		.pipe(gulp.dest("dist/lib"));
 });
-gulp.task("copy-css", ()=>{
-	gulp.src("src/css/**/*.*")
-		.pipe(gulp.dest("dist/css"));
-});
-gulp.task("copy", ["copy-images", "copy-lib", "copy-css"]);
+//gulp.task("copy-css", ()=>{
+//	gulp.src("src/css/**/*.*")
+//		.pipe(gulp.dest("dist/css"));
+//});
+gulp.task("copy", ["copy-images", "copy-lib"]);
 
 // 启动 webserver
 gulp.task('server', function() {
@@ -69,4 +76,4 @@ gulp.task("watch", ()=>{
 });
 
 // 默认任务
-gulp.task("default", ["sass", "js", "html", "copy", "server", "watch"]);
+gulp.task("default", ["sass", "js", "html", "copy", "server", "watch","css"]);

@@ -23,15 +23,7 @@
 				<div class="hot">
 					<h3>热门商品</h3>
 					<ul>
-						<!--<li>
-							<a href="/html/detail.html" class="pic">
-								<img src="/imgs/hot1.jpg"/>
-							</a>
-							<span class="title">
-								<a href="/html/detail.html">PBA艺术家修容粉饼</a>
-								<span>￥99.00</span>
-							</span>
-						</li>-->
+						
 					</ul>
 				</div>
 				<!--商品详情-->
@@ -46,6 +38,8 @@
 		
 		<!--底部-->
 		<div class="footer"></div>
+		<!--右边-->
+		<div class="server-bar"></div>
 		
 		
 		<script type="text/html" id="detail-img-template">
@@ -68,15 +62,16 @@
 						<p>{{desc}}</p>
 					</div>
 					<div class="price">
-						<span>￥{{price}}</span>
+						￥<span>{{price}}</span>
 					</div>
 					<div class="color">
-						<label>颜色：</label>
+						<label>规格：</label>
 						<div class="sub">
 							{{each colors col}}
 								<a href="javascript:">{{col.P}}</a>
 							{{/each}}
 						</div>
+						<span style="display: none;color: orangered;">请选择商品规格</span>
 					</div>
 					<div class="amount">
 						<label>数量：</label>

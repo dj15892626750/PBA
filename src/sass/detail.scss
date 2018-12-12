@@ -61,11 +61,8 @@
             .price{
                 padding: 20px 0;
                 border-bottom: 1px solid #e2e2e2;
-                color: #969696;
-                span{
-                    color: #ff498c;
-                    font-size: 22px;
-                }
+                color: #ff498c;
+                font-size: 22px;
             }
             .color{
                 height: 80px;
@@ -86,6 +83,9 @@
                         border: 1px solid #e2e2e2;
                         margin: 0 4px 10px;
                         color: #535353;
+                    }
+                    .cho{
+                        border: 1px solid orangered;
                     }
                 }
             }

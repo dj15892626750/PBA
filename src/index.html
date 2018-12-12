@@ -5,134 +5,62 @@
 		<title>PBA-我的美妆网</title>
 		<link rel="stylesheet" type="text/css" href="/css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/jquery.easyfader.css"/>
 		<script src="lib/requirejs/require.min.js" data-main="js/index"></script>
 		
 	</head>
 	<body>
 		<!--顶部-->
-		<div id="container-header">
-			
-		</div>
+		<div id="container-header"></div>
 		
 		<!--轮播-->
 		<div class="banner">
 			<div class="wrap">
 				<!--轮播图-->
-				<!--<div class="swiper-container">
-					<ul class="swiper-wrapper">
-						<li style="display: block;" class="swiper-slide"><img src="imgs/banner_01.jpg"/></li>
-						<li class="swiper-slide"><img src="imgs/banner_03.jpg"/></li>
-					</ul>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-pagination">
-					</div>
-				</div>-->
-				
-				
-				<div class="banner-box">
+				<div id="dowebok" class="banner-box fader">
 					<ul>
-						<li style="display: block;"><img src="imgs/banner_01.jpg"/></li>
-						<li><img src="imgs/banner_03.jpg"/></li>
+						<li class="slide"><img src="imgs/banner_01.jpg"/></li>
+						<li class="slide"><img src="imgs/banner_03.jpg"/></li>
 					</ul>
-					<div class="prev"></div>
-					<div class="next"></div>
-					<div class="point">
-						<i></i>
-						<i></i>
+					<div class="page prev" data-target="prev"></div>
+					<div class="page next" data-target="next"></div>
+					<div class="pager_list">
 					</div>
 				</div>
 				
+				<!--分类-->
 				<div class="list-category">
 					<ul>
-						<li>
+						<li class="children daily-care">
 							<a href="javascript:" class="category-name">日常护理<span>〉</span></a>
-							<div class="category-item" style="display: none;">
-								<ul class="category-child"> 
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="imgs/1.png">
-											<span class="text">洁面</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li>   
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="imgs/2.png">
-											<span class="text">乳液</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li> 
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="imgs/3.png">
-											<span class="text">眼霜</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li> 
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="imgs/4.png">
-											<span class="text">防护</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li> 
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="imgs/5.png">
-											<span class="text">男士护肤</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li> 
-								</ul>
-								<!--<ul class="line"></ul>-->
-								<!--<ul class="category-child"> 
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="http://pbaimage.pba.cn/2014/new_pba/images/homepage/index_v0309/category-item/daily/6.png">
-											<span class="text">爽肤</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li>   
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="http://pbaimage.pba.cn/2014/new_pba/images/homepage/index_v0309/category-item/daily/6.png">
-											<span class="text">爽肤</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li> 
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="http://pbaimage.pba.cn/2014/new_pba/images/homepage/index_v0309/category-item/daily/6.png">
-											<span class="text">爽肤</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li> 
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="http://pbaimage.pba.cn/2014/new_pba/images/homepage/index_v0309/category-item/daily/6.png">
-											<span class="text">爽肤</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li> 
-									<li class="category-child-item">   
-										<a class="link" href="#">      
-											<img src="http://pbaimage.pba.cn/2014/new_pba/images/homepage/index_v0309/category-item/daily/6.png">
-											<span class="text">爽肤</span>
-										</a>     
-										<a href="#" class="btn-select">选购</a>  
-									</li> 
-								</ul>-->
-									
-							</div>
+							<div class="category-item"></div>
 						</li>
-						<li><a href="javascript:" class="category-name">人气面膜<span>〉</span></a></li>
-						<li><a href="javascript:" class="category-name">底妆系列<span>〉</span></a></li>
-						<li><a href="javascript:" class="category-name">眼妆系列<span>〉</span></a></li>
-						<li><a href="javascript:" class="category-name">唇膏系列<span>〉</span></a></li>
-						<li><a href="javascript:" class="category-name">卸妆系列<span>〉</span></a></li>
-						<li><a href="javascript:" class="category-name">按功效查找<span>〉</span></a></li>
+						<li class="children face-mask">
+							<a href="javascript:" class="category-name">人气面膜<span>〉</span></a>
+							<div class="category-item"></div>
+						</li>
+						<li class="children makeup">
+							<a href="javascript:" class="category-name">底妆系列<span>〉</span></a>
+							<div class="category-item"></div>
+						</li>
+						<li class="children eye-makeup">
+							<a href="javascript:" class="category-name">眼妆系列<span>〉</span></a>
+							<div class="category-item"></div>
+						</li>
+						<li class="children lipstick">
+							<a href="javascript:" class="category-name">唇膏系列<span>〉</span></a>
+							<div class="category-item"></div>
+						</li>
+						<li class="children makeup-remover">
+							<a href="javascript:" class="category-name">卸妆系列<span>〉</span></a>
+							<div class="category-item"></div>
+						</li>
+						<li class="children effect">
+							<a href="javascript:" class="category-name effect">按功效查找<span>〉</span></a>
+							<div class="category-item"></div>
+						</li>
+						
+						<!--<div class="category-item" style="display: none;"></div>-->
 					</ul>
 				</div>
 			</div>
@@ -156,17 +84,7 @@
 				</div>
 				<div class="bottom">
 					<ul class="star-prod">
-						<!--<li>
-							<a href="javascript:">
-								<img src="imgs/star_01.png"/>
-								<div class="goods-info">
-									<p class="goods-title">柔肤多效BB霜 2014新款</p>
-									<p class="goods-present">经典款升级版，更轻薄更滋润</p>
-									<p class="goods-price">49.9元</p>
-								</div>
-							</a>
-						</li>
-						-->
+						
 					</ul>
 				</div>
 			</div>
@@ -180,7 +98,7 @@
 						<h1>彩妆香水</h1>
 						<img src="imgs/birck_line_02.png"/>
 						<p>自然粉饰，惊艳登场，让美丽肆无忌惮！</p>
-						<a href="javascript:">
+						<a href="/html/list.html?id=2">
 							<img src="imgs/more.png"/>
 						</a>
 					</div>
@@ -190,17 +108,7 @@
 						</div>
 						<div class="right">
 							<ul class="cosmetics-prod">
-								<!--<li>
-									<a href="#">
-										<img src="imgs/birck_03_02.png"/>
-										<div class="goods-info">
-											<p class="goods-title">遮瑕膏</p>
-											<p class="goods-present">毛孔、瑕疵、黑眼圈全隐形</p>
-											<p class="goods-price">49.9元</p>
-										</div>
-									</a>
-								</li>
-								-->
+								
 							</ul>
 						</div>
 					</div>
@@ -212,7 +120,7 @@
 						<h1>护肤养肤</h1>
 						<img src="imgs/birck_line_02.png"/>
 						<p>萃取植物精华，温和养护，还原健康水润肌！</p>
-						<a href="javascript:">
+						<a href="/html/list.html?id=1">
 							<img src="imgs/more.png"/>
 						</a>
 					</div>
@@ -234,7 +142,7 @@
 						<h1>当红名膜</h1>
 						<img src="imgs/birck_line_02.png"/>
 						<p>无限膜力，轻松补水，满足肌肤各种渴望！</p>
-						<a href="javascript:">
+						<a href="/html/list.html?id=1">
 							<img src="imgs/more.png"/>
 						</a>
 					</div>
@@ -256,7 +164,7 @@
 						<h1>工具洗护</h1>
 						<img src="imgs/birck_line_02.png"/>
 						<p>辅助上妆，自然服帖，省时省力更省心！</p>
-						<a href="javascript:">
+						<a href="/html/list.html?id=5">
 							<img src="imgs/more.png"/>
 						</a>
 					</div>
@@ -289,14 +197,17 @@
 		</div>
 		
 		<!--底部-->
-		<div class="footer"></div>		
+		<div class="footer"></div>	
+		
+		<!--右边-->
+		<div class="server-bar"></div>
 		
 		
 		<!--明星产品-->
 		<script type="text/html" id="star-template">
 			{{each star prod}}
 			<li>
-				<a href="javascript:">
+				<a href="/html/detail.html?id={{prod.id}}">
 					<img src="{{prod.img}}"/>
 					<div class="goods-info">
 						<p class="goods-title">{{prod.title}}</p>
@@ -312,7 +223,7 @@
 		<script type="text/html" id="cosmetics-template">
 			{{each cosmetics prod}}
 			<li>
-				<a href="javascript:">
+				<a href="/html/detail.html?id={{prod.id}}">
 					<img src="{{prod.img}}"/>
 					<div class="goods-info">
 						<p class="goods-title">{{prod.title}}</p>
@@ -328,7 +239,7 @@
 		<script type="text/html" id="skin-template">
 			{{each skin prod}}
 			<li>
-				<a href="javascript:">
+				<a href="/html/detail.html?id={{prod.id}}">
 					<img src="{{prod.img}}"/>
 					<div class="goods-info">
 						<p class="goods-title">{{prod.title}}</p>
@@ -344,7 +255,7 @@
 		<script type="text/html" id="models-template">
 			{{each models prod}}
 			<li>
-				<a href="javascript:">
+				<a href="/html/detail.html?id={{prod.id}}">
 					<img src="{{prod.img}}"/>
 					<div class="goods-info">
 						<p class="goods-title">{{prod.title}}</p>
@@ -360,7 +271,7 @@
 		<script type="text/html" id="tools-template">
 			{{each tools prod}}
 			<li>
-				<a href="javascript:">
+				<a href="/html/detail.html?id={{prod.id}}">
 					<img src="{{prod.img}}"/>
 					<div class="goods-info">
 						<p class="goods-title">{{prod.title}}</p>
@@ -376,7 +287,7 @@
 		<script type="text/html" id="food-template">
 			{{each food prod}}
 			<li>
-				<a href="javascript:">
+				<a href="/html/detail.html?id={{prod.id}}">
 					<img src="{{prod.img}}"/>
 					<div class="goods-info">
 						<p class="goods-title">{{prod.title}}</p>
@@ -388,6 +299,18 @@
 			{{/each}}
 		</script>
 
-		
+		<script type="text/html" id="daily-care-template">
+			<ul class="category-child"> 
+				{{each daily prod}}
+				<li class="category-child-item">   
+					<a class="link" href="#">      
+						<img src="{{prod.img}}">
+						<span class="text">{{prod.title}}</span>
+					</a>     
+					<a href="#" class="btn-select">选购</a>  
+				</li> 
+				{{/each}}
+			</ul>
+		</script>
 	</body>
 </html>

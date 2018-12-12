@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["jquery","template","load"],function($,template){
+	require(["jquery","template","load","right"],function($,template){
 //		console.log($);
 		function List() {
 			this.loadHotProducts();
@@ -11,7 +11,6 @@ require(["config"],function(){
 					console.log(data)
 					//var htmlstring = template("模板id", 待渲染数据data);
 					const html = template("list-template", {products: data.res_body.list})
-					console.log(html)
 					$(".goods-list-show").find("ul").prepend(html);
 				});				
 			}

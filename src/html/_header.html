@@ -6,20 +6,17 @@
 			<li><a href="/html/register.html">注册</a></li>
 			<li>
 				<a href="javascript:">我的PBA▼</a>
-				<div class="my-list" style="display: none;">
-					<a href="#">我的订单</a>
-					<a href="#">我的分享</a>
-					<a href="#">我的积分</a>
-					<a href="#">我的售后</a>
+				<div class="my-list">
+					<a href="javascript:">我的订单</a>
+					<a href="javascript:">我的分享</a>
+					<a href="javascript:">我的积分</a>
+					<a href="javascript:">我的售后</a>
 				</div>
 			</li>
 			<li><a href="javascript:">帮助中心</a></li>
 			<li><a href="javascript:">客服热线：400-7796－400</a></li>
-			<li>
-				<a href="/html/cart.html"><img src="/imgs/carlogo.png"/>购物车</a>
-				<div class="cart-box" style="display: none;">
-					<span>当前购物车还没有商品哦</span>
-				</div>
+			<li id="cart">
+				<a href="javascript:"><img src="/imgs/carlogo.png"/>购物车</a>
 			</li>
 		</ul>
 	</div>
@@ -28,20 +25,21 @@
 <!--导航条-->
 <div class="nav">
 	<div class="logo">
-		<img src="/imgs/logo.png"/>
+		<a href="/"><img src="/imgs/logo.png"/></a>
 	</div>
 	<ul>
-		<li class="active"><a href="/">首页</a></li>
-		<li><a href="/html/list.html">养肤护肤</a></li>
-		<li><a href="/html/list.html">彩妆香水</a></li>
-		<li><a href="/html/list.html">工具洗护</a></li>
-		<li><a href="/html/list.html">美容仪器</a></li>
-		<li><a href="/html/list.html">美容食品</a></li>
-		<li><a href="/html/list.html">新品上市</a></li>
-		<li><a href="/html/list.html">顾问查询</a></li>
+		<li><a href="/">首页</a></li>
+		<li><a href="/html/list.html?id=1">养肤护肤</a></li>
+		<li><a href="/html/list.html?id=2">彩妆香水</a></li>
+		<li><a href="/html/list.html?id=3">工具洗护</a></li>
+		<li><a href="/html/list.html?id=4">美容仪器</a></li>
+		<li><a href="/html/list.html?id=5">美容食品</a></li>
+		<li><a href="/html/list.html?id=6">新品上市</a></li>
+		<li><a href="/html/list.html?id=7">顾问查询</a></li>
 	</ul>
 	<div class="search">
 		<input type="text" id="txt" value="" placeholder="搜索你想要的商品"/>
 		<input type="button" id="search-btn" value="" />
+		<div class="suggest"></div>
 	</div>
 </div>

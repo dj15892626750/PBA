@@ -4,14 +4,16 @@
 		<meta charset="utf-8" />
 		<title>PBA-用户登录</title>
 		<link rel="stylesheet" type="text/css" href="/css/login.css"/>
+		<script src="/lib/requirejs/require.min.js" data-main="/js/login"></script>
 	</head>
 	<body>
 		<div class="login">
 			<div class="logo">
 				<a href="/">
-					<img src="../imgs/reg-logo.png"/>
+					<img src="/imgs/reg-logo.png"/>
 				</a>
 			</div>
+			<span class="error"></span>
 			<form id="login-form">
 				<p>
 					<input type="text" name="username" id="username" value="" placeholder="手机号码"/>
@@ -32,7 +34,6 @@
 					</p>
 					
 				</div>
-				
 			</form>
 		</div>
 	</body>
