@@ -162,6 +162,7 @@ require(["config"],function(){
 					console.log(currProduct);
 					selectgoods.push(currProduct);
 				})
+				
 				if(selectgoods.length!=0){
 					//将购物车商品保存进cookie
 					$.cookie("selectgoods",selectgoods,{expires:10,path:"/"});

@@ -1,6 +1,13 @@
 h3{
     margin: 0;
 }
+#cart img{
+    width: 16px;
+    vertical-align: inherit;
+}
+a:hover{
+    text-decoration: none;
+}
 .main{
     width: 100%;
     background: #f5f5f5;
@@ -12,7 +19,7 @@ h3{
         background: #fff;
         padding-top: 40px;  
       //添加地址
-        .address{
+        .delivery-address{
             margin: 0 48px;
             min-height: 244px;
             h3{
@@ -31,6 +38,8 @@ h3{
                     height: 178px;
                     border: 1px solid #e0e0e0;
                     float: left;
+                    margin-bottom: 5px;
+                    margin-right: 5px;
                     span{
                        color: #b0b0b0; 
                        display: block;
@@ -47,6 +56,7 @@ h3{
                 }
                 .my-address{
                     padding: 30px;  
+                    position: relative;
                     dt{
                         font-size: 18px;
                         font-weight: normal;
@@ -58,6 +68,28 @@ h3{
                         color: #757575;
                         line-height: 22px;
                     }
+                    .addr-handle{
+                        width: 265px;
+                        height: 16px;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 0;
+                        i{
+                            position: absolute;
+                            bottom: 10px;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+                        i:first-child{
+                            right: 35px;
+                            color: #66AFE9;
+                        }
+                        i:last-child{
+                            right: 10px;
+                            color: red;
+                        }
+                    }
+                    
                 }
             }
         }
@@ -311,4 +343,14 @@ h3{
     margin-top: 0;
 }
 
+//省市区
+.adress{position:absolute;top:0;left:0;width:457px;margin:0;padding-left:5px;height:30px;line-height:30px;font-size:12px;border:1px solid #c9cacb;}
+._citys { width: 450px; display: inline-block; border: 2px solid #eee; padding: 5px; position: relative;background: #fff; }
+._citys span { color: #05920a; height: 15px; width: 15px; line-height: 15px; text-align: center; border-radius: 3px; position: absolute; right: 10px; top: 10px; border: 1px solid #05920a; cursor: pointer; }
+._citys0 { width: 95%; height: 34px; line-height: 34px; display: inline-block; border-bottom: 2px solid #05920a; padding: 0px 5px; font-size:14px; font-weight:bold; margin-left:6px; }
+._citys0 li { display: inline-block; line-height: 34px; font-size: 15px; color: #888; width: 80px; text-align: center; cursor: pointer; }
+._citys1 { width: 100%; display: inline-block; padding: 10px 0; }
+._citys1 a { width: 83px; height: 35px; display: inline-block; background-color: #f5f5f5; color: #666; margin-left: 6px; margin-top: 3px; line-height: 35px; text-align: center; cursor: pointer; font-size: 12px; border-radius: 5px; overflow: hidden; }
+._citys1 a:hover { color: #fff; background-color: #05920a; }
+.AreaS { background-color: #05920a !important; color: #fff !important; }
 

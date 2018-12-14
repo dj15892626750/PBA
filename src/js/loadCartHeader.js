@@ -31,9 +31,13 @@ define(["jquery","cookie"],function($){
 		},
 		showLoginUser() {
 			const user = $.cookie("loginUser");
+			let users="";
+			if(user!=undefined){
+				users=JSON.parse(user);
+			}
 			let html="";
 			if (user) {
-				html +='<li><a href="javascript:">欢迎:&nbsp;&nbsp;'+user+'</a></li>'
+				html +='<li><a href="javascript:">欢迎:&nbsp;&nbsp;'+users+'</a></li>'
 					+'<li><a href="javascript:" class="exit">退出</a></li>';
 				$(".header-wrap ul li:lt(2)").remove();
 				$(".header-wrap").find("ul").prepend(html);

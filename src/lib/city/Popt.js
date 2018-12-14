@@ -40,7 +40,7 @@ var Iput = {
         }
     },
     pop: function () {
-        var $a = document.getElementsByClassName("form-address").item(0);
+        var $a = Iput.confg.id.parentNode;
         var $c = document.createElement("iframe");
         var $b = document.createElement("div");
         $c.setAttribute('id', Iput.confg.idIframe);
@@ -77,8 +77,8 @@ var Iput = {
         }
     },
     drice: function (e) {
-        var bodyHith = Iput.confg.bodyHeight == 0 ? document.getElementsByClassName("form-address")[0].scrollHeight : Iput.confg.bodyHeight;
-        var bodywidth = Iput.confg.bodyWidth == 0 ? document.getElementsByClassName("form-address")[0].scrollWidth : Iput.confg.bodyWidth;
+        var bodyHith = Iput.confg.bodyHeight == 0 ? Iput.confg.id.parentNode.scrollHeight : Iput.confg.bodyHeight;
+        var bodywidth = Iput.confg.bodyWidth == 0 ? Iput.confg.id.parentNode.scrollWidth : Iput.confg.bodyWidth;
         if (!e) e = window.event;
         var top = 0, left = 0;
         var a = Iput.get(Iput.confg.idBox);
@@ -102,6 +102,10 @@ var Iput = {
                 b.style.top = top - st + "px";
                 a.style.left = left - sl + "px";
                 b.style.left = left - sl + "px";
+//				b.style.top="42px";
+//				b.style.left="0";
+//				a.style.top="42px";
+//				a.style.left="0";
             }
             else if (Iput.confg.hand == "0") {
                 w = Iput.confg.id.offsetWidth + "px";
@@ -147,8 +151,8 @@ var Iput = {
     },
     colse: function () {
         if (Iput.get(Iput.confg.idIframe)) {
-            document.getElementsByClassName("form-address")[0].removeChild(Iput.get(Iput.confg.idBox));
-            document.getElementsByClassName("form-address")[0].removeChild(Iput.get(Iput.confg.idIframe));
+            Iput.confg.id.parentNode.removeChild(Iput.get(Iput.confg.idBox));
+            Iput.confg.id.parentNode.removeChild(Iput.get(Iput.confg.idIframe));
         }
         if (Iput.get(Iput.confg.pop)) {
             Iput.get(Iput.confg.pop).style.display = "none";
