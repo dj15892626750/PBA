@@ -11,10 +11,6 @@ a:hover {
   text-decoration: none;
 }
 
-.select {
-  border: 2px solid orangered;
-}
-
 .main {
   width: 100%;
   background: #f5f5f5;
@@ -113,6 +109,10 @@ a:hover {
 .main .main-wrap .delivery-address .address-body .my-address .addr-handle i:last-child {
   right: 10px;
   color: red;
+}
+
+.main .main-wrap .delivery-address .address-body .sect {
+  border: 2px solid orangered;
 }
 
 .main .main-wrap .goods {
@@ -300,6 +300,16 @@ a:hover {
   padding: 20px 48px;
   border-top: 1px solid #e0e0e0;
   height: 80px;
+}
+
+.main .main-wrap .settlement .fl {
+  float: left;
+  width: 700px;
+  height: 38px;
+}
+
+.main .main-wrap .settlement .fl span {
+  display: block;
 }
 
 .main .main-wrap .settlement .fr {

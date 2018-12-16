@@ -136,6 +136,7 @@
 			      	</div>
 			      	<div class="modal-body">
 			      		<form class="update-address">
+			      			<input type="hidden" class="id" value="" />
 			      			<div class="form-name">
 				      			<input type="text" name="name" class="name" value="" placeholder="姓名"/>
 				      			<input type="text" name="phone" class="phone" value="" placeholder="手机号"/>
@@ -187,6 +188,7 @@
 					<dd class="adr">{{prod.hcity}} {{prod.hproper}} {{prod.harea}}</dd>
 					<dd class="adr-det">{{prod.address_detail}}</dd>
 				</dl>
+				<input type="hidden" class="id" value="{{prod.id}}" />
 				<input type="hidden" class="zipcode" value="{{prod.zipcode}}" />
 				<input type="hidden" class="tag" value="{{prod.tag}}" />
 				<div class="addr-handle">

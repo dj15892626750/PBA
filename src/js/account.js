@@ -5,10 +5,10 @@ require(["config"],function(){
 			this.address=[];//地址
 			$.cookie.json = true;
 			this.render();
-			this.addListener();
-			
+			this.addListener();	
 		}
 		$.extend(Account.prototype,{
+			
 			render(){
 				//加载商品
 				const goods=this.goods=$.cookie("selectgoods")||[];
@@ -27,6 +27,7 @@ require(["config"],function(){
 				//加载地址
 				const address=this.address=$.cookie("address")||[];
 				console.log(address)
+				
 				const addr=template("address-template",{address:address});
 				$(".address-body").prepend(addr);
 			},
@@ -69,7 +70,17 @@ require(["config"],function(){
 			
 			//添加地址
 			saveUserAddress(){
+				let max_id=0;
 				const address=this.address=$.cookie("address") || [];
+				if(address.length!=0){
+					address.forEach((curr)=>{
+						if(curr.id>max_id){
+							max_id=curr.id;
+						}
+					})
+				}
+				let id=Number(max_id);
+				id++;
 				let 
 					name=$(".name").val(),
 					phone=$(".phone").val(),
@@ -103,6 +114,7 @@ require(["config"],function(){
 						</div>`;
 					$(".address-body").prepend(html);
 					const curr={
+						id:id,
 						name:name,
 						phone:phone,
 						hcity:hcity,
@@ -124,6 +136,12 @@ require(["config"],function(){
 			deleteAddress(event){
 				const $src=$(event.target);
 				const $parent=$src.parents(".my-address");
+				const id=$parent.find(".id").val();
+				// 将数组中将当前删除的商品对象移除
+				this.address = this.address.filter(curr=>curr.id!=id);
+				// 将修改后的数组存回 cookie
+				$.cookie("address", this.address, {expires: 10, path: "/"});
+				// 页面DOM树中删除行
 				$parent.remove();
 			},
 			//点击修改地址
@@ -131,13 +149,15 @@ require(["config"],function(){
 				const $src=$(event.target);
 				const $parent=$src.parents(".my-address");
 				const 
+					id=$parent.find(".id").val(),
 					name=$parent.find("dt").text(),
 					phone=$parent.find(".mobile").text(),
 					addr=$parent.find(".adr").text(),
 					adr_detail=$parent.find(".adr-det").text(),
 					zipcode=$parent.find(".zipcode").val(),
 					tag=$parent.find(".tag").val();
-					
+				
+				$(".update-address").find(".id").val(id);
 				$(".update-address").find(".name").val(name);
 				$(".update-address").find(".phone").val(phone);
 				$(".update-address").find(".address").val(addr);
@@ -148,8 +168,9 @@ require(["config"],function(){
 			
 			//修改后重新保存地址
 			updateSaveAddress(){
-				let id=parseInt(Math.random()*100);
-				console.log(id);
+				const _id=$(".update-address").find(".id").val();
+				console.log(_id);
+				
 			},
 		});
 		new Account();
