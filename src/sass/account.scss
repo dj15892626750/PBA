@@ -91,6 +91,9 @@ a:hover{
                     }
                     
                 }
+                .sect{
+                    border: 2px solid orangered;
+                }
             }
         }
         //商品列表
@@ -255,6 +258,14 @@ a:hover{
             padding: 20px 48px;
             border-top: 1px solid #e0e0e0;
             height: 80px;
+            .fl{
+                float: left;
+                width: 700px;
+                height: 38px;
+                span{
+                    display: block;
+                }
+            }
             .fr{
                 float: right;
                 a{

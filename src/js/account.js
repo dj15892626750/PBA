@@ -44,6 +44,24 @@ require(["config"],function(){
 				$(".address-body").on("click",".upd",$.proxy(this.updateAddress,this));
 				//修改后重新保存地址
 				$("#update-save").on("click",this.updateSaveAddress);
+				//选中送货地址
+//				$(".address-body").on("click",".my-address",$.proxy(this.selectedAddress,this));
+				const divs=$(".my-address");
+				divs.each((index,element)=>{
+					$(element).click(function(){
+						$(this).addClass("sect");
+						$(this).siblings().removeClass("sect");
+						const 
+							name=$(this).find("dt").text(),
+							phone=$(this).find(".mobile").text(),
+							addr=$(this).find(".adr").text(),
+							adr_detail=$(this).find(".adr-det").text();
+						const html=`<span>${name} ${phone}</span>
+									<span>${addr} ${adr_detail}</span>`;
+						$(".fl").prepend(html);
+					})
+				})
+				
 			},
 			SelectAddress(e){
 				SelCity(this,e);
@@ -132,7 +150,7 @@ require(["config"],function(){
 			updateSaveAddress(){
 				let id=parseInt(Math.random()*100);
 				console.log(id);
-			}
+			},
 		});
 		new Account();
 	})

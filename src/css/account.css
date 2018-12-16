@@ -7,6 +7,14 @@ h3 {
   vertical-align: inherit;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+.select {
+  border: 2px solid orangered;
+}
+
 .main {
   width: 100%;
   background: #f5f5f5;
