@@ -59,7 +59,7 @@ require(["config"],function(){
 							adr_detail=$(this).find(".adr-det").text();
 						const html=`<span>${name} ${phone}</span>
 									<span>${addr} ${adr_detail}</span>`;
-						$(".fl").prepend(html);
+						$(".fl").html(html);
 					})
 				})
 				
@@ -88,10 +88,16 @@ require(["config"],function(){
 					hproper=$("#hproper").val(),//市
 					harea=$("#harea").val(),//区
 					address_detail=$(".address-detail").val(),
-					zipcode=$(".zipcode").val(),
-					tag=$(".tag").val();
+					zipcode=$(".add-address").find(".zipcode").val(),
+					tag=$(".add-address").find(".tag").val();
+				
+				console.log(harea)
 				if(name!="" && phone!="" && hcity!="" && hproper!="" && harea!="" && address_detail!=""){
-					harea=harea.replace(/\s/g,"");
+					if(harea!=undefined){
+						harea=harea.replace(/\s/g,"");
+					}else{
+						harea="";
+					}
 					const reg=/^1[34578]\d{9}$/;
 					if(!reg.test(phone)){
 						alert("请输入有效的手机号码");
@@ -148,6 +154,7 @@ require(["config"],function(){
 			updateAddress(event){
 				const $src=$(event.target);
 				const $parent=$src.parents(".my-address");
+				console.log($parent)
 				const 
 					id=$parent.find(".id").val(),
 					name=$parent.find("dt").text(),
@@ -168,8 +175,43 @@ require(["config"],function(){
 			
 			//修改后重新保存地址
 			updateSaveAddress(){
-				const _id=$(".update-address").find(".id").val();
-				console.log(_id);
+				const 
+					id=$(".update-address").find(".id").val(),
+					name=$(".update-address").find(".name").val(),
+					phone=$(".update-address").find(".phone").val(),
+					adr_detail=$(".update-address").find(".address-detail").val(),
+					zipcode=$(".update-address").find(".zipcode").val(),
+					tag=$(".update-address").find(".tag").val();
+					
+				let hcity=$(".update-address").find("#hcity").val(),//省
+					hproper=$(".update-address").find("#hproper").val(),//市
+					harea=$(".update-address").find("#harea").val();//区
+					
+				if(hcity==undefined){
+					hcity=$(".update-address").find(".address").val().split(" ")[0];
+					hproper=$(".update-address").find(".address").val().split(" ")[1];
+					harea=$(".update-address").find(".address").val().split(" ")[2];
+				}
+				
+				//从cookie中获取地址列表
+				const address=this.address=$.cookie("address")||[];
+				// 对应商品对象 
+				const prod = this.address.filter(curr=>curr.id==id)[0];
+
+				prod.name=name;
+				prod.phone=phone;
+				prod.address_detail=adr_detail;
+				prod.zipcode=zipcode;
+				prod.tag=tag;
+				prod.hcity=hcity;
+				prod.hproper=hproper;
+				prod.harea=harea;
+				$.cookie("address",address,{expires:10,path:"/"});				
+				//关闭模态框
+				$("#updateModal").modal("hide");
+				$(".update-address")[0].reset();
+				location.reload();
+				
 				
 			},
 		});

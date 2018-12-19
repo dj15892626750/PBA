@@ -1,9 +1,8 @@
-
-ul li{
-    list-style: none;
+ul{
+    margin-bottom: 0;
 }
-a{
-    text-decoration: none;
+.nav ul{
+    height: 45px;
 }
 //内容主体
 .main-body{
@@ -16,6 +15,7 @@ a{
         
         .tag{
             height: 20px;
+            margin-bottom: 7px;
             li{
                 float: left;
                 a{
@@ -53,7 +53,7 @@ a{
             }
         }
         .goods-list .category-cont{
-            height: 19px;
+            height: 47px;
             border-top: none;
             background-color: #f8f8f8;
             padding: 14px 0px;
